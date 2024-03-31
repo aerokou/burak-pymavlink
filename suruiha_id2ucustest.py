@@ -20,7 +20,7 @@ def takeoff(alt , droneid):
 
     print("Arm edildi")
 
-    vehicle.mav.command_long_send(droneid,mavutil.mavlink.MAV_COMP_ID_SYSTEM_CONTROL,mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,0,0,0,0,0,0,0,alt)
+    vehicle.mav.command_long_send(droneid, mavutil.mavlink.MAV_COMP_ID_SYSTEM_CONTROL, mavutil.mavlink.MAV_CMD_NAV_TAKEOFF, 0, 0, 0, 0, 0, 0, 0, alt)
 
     print ("8 metre yukseliyor ve en az 10 saniye bekleyecek")
 
@@ -30,9 +30,4 @@ def takeoff(alt , droneid):
     
     vehicle.set_mode("RTL")
 
-takeoff(8,1)
-
-
-
-
-
+takeoff(8,4)

@@ -1,10 +1,10 @@
 from pymavlink import mavutil
 
 # Sim bağlantısı
-address = "udp:127.0.0.1:14550"
+# address = "udp:127.0.0.1:14550"
 
 # Gerçek bağlantı
-# address = "/dev/ttyACM0"
+address = "/dev/ttyACM0"
 print("address onaylandı")
 vehicle=mavutil.mavlink_connection(address , baud=57600, autoreconnect=True)
 print("baglantı olustu")

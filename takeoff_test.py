@@ -22,7 +22,7 @@ def takeoff(alt):
 
     vehicle.mav.command_long_send(vehicle.target_system, vehicle.target_component, mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,0,0,0,0,0,0,0,alt)
 
-    print ("8 metre yukseliyor ve en az 10 saniye bekleyecek")
+    print (f"{alt} metre yukseliyor ve en az 10 saniye bekleyecek")
 
     time.sleep(15)
 
